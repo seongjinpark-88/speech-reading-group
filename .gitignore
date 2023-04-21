@@ -1,0 +1,6 @@
+# Ignore Kaldi dir
+kaldi_start/kaldi
+
+# Ignore data dir
+kaldi_start/forced_alignment/data
+kaldi_start/forced_alignment/exp

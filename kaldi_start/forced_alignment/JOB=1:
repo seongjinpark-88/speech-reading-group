@@ -1,0 +1,9 @@
+# 1 exp/tdnn_7b_chain_online/decode_example/log/nbest_to_prons.JOB.log lattice-1best --acoustic-scale=0.1 "ark:gunzip -c exp/tdnn_7b_chain_online/decode_example/lat.JOB.gz|" ark:- | lattice-align_words data/lang_chain/phones/word_boundary.int exp/tdnn_7b_chain_online/decode_example/../final.mdl ark:- ark:- | nbest-to-prons --print-lengths-per-phone exp/tdnn_7b_chain_online/decode_example/../final.mdl ark:- exp/tdnn_7b_chain_online/decode_example/JOB.prons 
+# Started at Thu Apr 20 21:12:31 MST 2023
+#
+bash: line 1: 1: command not found
+bash: line 1: lattice-align_words: command not found
+nbest-to-prons --print-lengths-per-phone exp/tdnn_7b_chain_online/decode_example/../final.mdl ark:- exp/tdnn_7b_chain_online/decode_example/JOB.prons 
+LOG (nbest-to-prons[5.5.1069~1-ab8fa]:main():nbest-to-prons.cc:121) Printed prons for 0 linear lattices; 0 had errors.
+# Accounting: time=0 threads=1
+# Ended (code 1) at Thu Apr 20 21:12:31 MST 2023, elapsed time 0 seconds
